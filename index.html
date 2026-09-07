@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <div>
+        <h1>Account Check</h1>
+        <p>Verifye eta kont ou</p>
+      </div>
+      <div class="status-dot"></div>
+    </header>
+
+    <main>
+
+      <section class="hero">
+        <div class="shield">🛡️</div>
+        <h2>Verifye kont ou</h2>
+        <p>
+          Tcheke si kont lan aktif oswa si li bloke,
+          epi wè enfòmasyon sou blokaj la.
+        </p>
+      </section>
+
+      <section class="check-card">
+
+        <label for="account">
+          ID oswa non kont
+        </label>
+
+        <input
+          type="text"
+          id="account"
+          placeholder="Antre ID kont lan"
+          autocomplete="off"
+        >
+
+        <button id="checkBtn">
+          🔎 Verifye kont
+        </button>
+
+      </section>
+
+      <section id="result" class="result hidden">
+
+        <div id="resultIcon" class="result-icon">✓</div>
+
+        <h2 id="resultTitle">Kont aktif</h2>
+
+        <p id="resultText">
+          Pa gen blokaj sou kont sa a.
+        </p>
+
+        <div class="info-box">
+
+          <div class="info-row">
+            <span>Estati</span>
+            <strong id="accountStatus">Aktif</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Rezon</span>
+            <strong id="banReason">Pa gen okenn</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Dire</span>
+            <strong id="banDuration">—</strong>
+          </div>
+
+          <div class="info-row">
+            <span>Revizyon</span>
+            <strong id="reviewStatus">Disponib</strong>
+          </div>
+
+        </div>
+
+        <button id="reviewBtn" class="review-btn hidden">
+          📝 Mande revizyon
+        </button>
+
+      </section>
+
+    </main>
+
+    <footer>
+      Account Check • V1
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
