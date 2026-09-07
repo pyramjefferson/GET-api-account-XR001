@@ -1,0 +1,16 @@
+[
+  {
+    "id": "XR001",
+    "status": "banned",
+    "reason": "Violation of rules",
+    "duration": "7 days",
+    "reviewAvailable": true
+  },
+  {
+    "id": "XR002",
+    "status": "active",
+    "reason": "none",
+    "duration": "none",
+    "reviewAvailable": false
+  }
+]
